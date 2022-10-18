@@ -1,22 +1,7 @@
-/*
- * GLUT Shapes Demo
- *
- * Written by Nigel Stewart November 2003
- *
- * This program is test harness for the sphere, cone
- * and torus shapes in GLUT.
- *
- * Spinning wireframe and smooth shaded shapes are
- * displayed until the ESC or q key is pressed.  The
- * number of geometry stacks and slices can be adjusted
- * using the + and - keys.
- */
-
-
 #include <GL/gl.h>
- #include <GL/glu.h>
- #include <GL/glut.h>
- #include <stdlib.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
+#include <stdlib.h>
 #include <windows.h>
 #include <gl/gl.h>
 #include <math.h>
@@ -95,7 +80,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
         else
         {
             /* OpenGL animation code goes here */
-glClearColor(1.0f, 1.0f, 1.0f, 0.0f); // Background color
+ glClearColor(1.0f, 1.0f, 1.0f, 0.0f); // Background color
  glClear(GL_COLOR_BUFFER_BIT);
  glPushMatrix();
  glColor3f(0,0,0); // Color of the following object
@@ -103,16 +88,16 @@ glClearColor(1.0f, 1.0f, 1.0f, 0.0f); // Background color
  //Upper Line
  glVertex2f(-0.4,0.2); // First point of shape
  glVertex2f(0.4,0.2); // Second point
-//Middle line from left
+ //Middle line from left
  glVertex2f(-0.4,0); // First point of shape
  glVertex2f(-0.2,0); // Second point
-//Middle Line In middle
+ //Middle Line In middle
  glVertex2f(-0.1,0); // First point of shape
  glVertex2f(0.1,0); // Second point
-//Middle Line from right
+ //Middle Line from right
  glVertex2f(0.2,0); // First point of shape
  glVertex2f(0.4,0); // Second point
-//Bottom Line
+ //Bottom Line
  glVertex2f(-0.4,-0.2); // First point of shape
  glVertex2f(0.4,-0.2); // Second point
  glEnd(); // End shape
